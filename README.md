@@ -1,7 +1,7 @@
 # CSE230finalproject
 Project name: Follow the gold
 
-Project type: Two people game
+Project type: Game
 
 Project members: Shijiao Song, Mingjun Xie, Xingfei Xu, Zhengyang Li
 
