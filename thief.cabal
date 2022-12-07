@@ -1,0 +1,43 @@
+name:                thief
+version:             0.1.0.0
+author:              Shijiao Song, Mingjun Xie, Xingfei Xu, Zhengyang Li
+maintainer:          N/A
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable thief
+  hs-source-dirs:      src
+  other-modules:       Thief
+                     , UI
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
+  build-depends:       base         >= 4.7 && < 5
+                     , brick <1.0
+                     , containers < 0.6.6
+                     , extra
+                     , linear
+                     , lens
+                     , random
+                     , transformers
+                     , vty
+                     , QuickCheck
+
+executable thief-test
+  hs-source-dirs:      src
+  other-modules:       Thief
+                     , UI
+  main-is:             testMain.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
+  build-depends:       base         >= 4.7 && < 5
+                     , brick <1.0
+                     , containers < 0.6.6
+                     , extra
+                     , linear
+                     , lens
+                     , random
+                     , transformers
+                     , vty
+                     , QuickCheck
